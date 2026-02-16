@@ -34,7 +34,6 @@ description = "Cross-platform colored terminal text."
 optional = false
 python-versions = "!=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,!=3.5.*,!=3.6.*,>=2.7"
 groups = ["main"]
-markers = "sys_platform == \"win32\""
 files = [
     {file = "colorama-0.4.6-py2.py3-none-any.whl", hash = "sha256:4f1d9991f5acc0ca119f9d443620b77f9d6b33703e51011c16baf57afb285fc6"},
     {file = "colorama-0.4.6.tar.gz", hash = "sha256:08695f5cb7ed6e0531a20572697297273c47b8cae5a63ffc6d6ed5c201be6e44"},
@@ -415,7 +414,6 @@ description = "Mypyc runtime library"
 optional = false
 python-versions = ">=3.9"
 groups = ["main"]
-markers = "platform_python_implementation != \"PyPy\""
 files = [
     {file = "librt-0.8.0-cp310-cp310-macosx_10_9_x86_64.whl", hash = "sha256:db63cf3586a24241e89ca1ce0b56baaec9d371a328bd186c529b27c914c9a1ef"},
     {file = "librt-0.8.0-cp310-cp310-macosx_11_0_arm64.whl", hash = "sha256:ba9d9e60651615bc614be5e21a82cdb7b1769a029369cf4b4d861e4f19686fb6"},
@@ -1062,7 +1060,6 @@ description = "Provider of IANA time zone data"
 optional = false
 python-versions = ">=2"
 groups = ["main"]
-markers = "sys_platform == \"win32\" or platform_system == \"Windows\""
 files = [
     {file = "tzdata-2025.3-py2.py3-none-any.whl", hash = "sha256:06a47e5700f3081aab02b2e513160914ff0694bce9947d6b76ebd6bf57cfc5d1"},
     {file = "tzdata-2025.3.tar.gz", hash = "sha256:de39c2ca5dc7b0344f2eba86f49d614019d29f060fc4ebc8a417896a620b56a7"},
@@ -1086,4 +1083,4 @@ brotli = ["brotli"]
 [metadata]
 lock-version = "2.1"
 python-versions = ">=3.12,<4"
-content-hash = "edee9cef144db5a26facbc28438d0987f1637556f2b24bad97596d6ba1ceace4"
+content-hash = "4ce612adc2382bdc93dd5637652bbee07698a7df887da39eb1520302e4bea8d1"
