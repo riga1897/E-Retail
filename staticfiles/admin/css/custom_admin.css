@@ -1,0 +1,54 @@
+/* Кастомные стили для админ-панели сети по продаже электроники */
+
+/* Стилизация уровней иерархии в списке */
+.field-hierarchy_level {
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Стилизация ссылки на поставщика */
+.field-link_to_supplier a {
+    color: #417690;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.field-link_to_supplier a:hover {
+    color: #205067;
+    text-decoration: underline;
+}
+
+/* Стилизация поля задолженности */
+.field-debt {
+    font-weight: bold;
+}
+
+/* Стилизация типа узла */
+.field-node_type {
+    font-style: italic;
+}
+
+/* Отступы для отображения иерархии */
+tr.level-0 td:first-child {
+    padding-left: 10px;
+}
+
+tr.level-1 td:first-child {
+    padding-left: 30px;
+}
+
+tr.level-2 td:first-child {
+    padding-left: 50px;
+}
+
+/* Стилизация инлайн-продуктов */
+.inline-related .tabular td {
+    padding: 6px 8px;
+}
+
+/* Заголовок группы полей */
+fieldset h2 {
+    color: #417690;
+    border-bottom: 2px solid #79aec8;
+    padding-bottom: 5px;
+}
