@@ -1,0 +1,77 @@
+[project]
+name = "repl-nix-workspace"
+version = "0.1.0"
+description = "Add your description here"
+requires-python = ">=3.12,<4"
+dependencies = [
+    "dj-database-url (==3.1.1)",
+    "django (==6.0.2)",
+    "django-environ (==0.12.1)",
+    "django-filter (==25.2)",
+    "django-stubs (==5.2.9)",
+    "djangorestframework (==3.16.1)",
+    "djangorestframework-stubs (==3.16.8)",
+    "email-validator (==2.3.0)",
+    "factory-boy (==3.3.3)",
+    "mypy (==1.19.1)",
+    "psycopg2-binary (==2.9.11)",
+    "pydantic (==2.12.5)",
+    "pydantic-settings (==2.13.0)",
+    "pytest (==9.0.2)",
+    "pytest-cov (==7.0.0)",
+    "pytest-django (==4.12.0)",
+    "ruff (==0.15.1)",
+    "whitenoise (==6.11.0)",
+    "asgiref (==3.11.1)",
+    "colorama (==0.4.6)",
+    "coverage (==7.13.4)",
+    "dnspython (==2.8.0)",
+    "faker (==40.4.0)",
+    "idna (==3.11)",
+    "iniconfig (==2.3.0)",
+    "mypy-extensions (==1.1.0)",
+    "packaging (==26.0)",
+    "pathspec (==1.0.4)",
+    "pluggy (==1.6.0)",
+    "pygments (==2.19.2)",
+    "python-dotenv (==1.2.1)",
+    "sqlparse (==0.5.5)",
+    "typing-extensions (==4.15.0)",
+    "annotated-types (==0.7.0)",
+    "django-stubs-ext (==5.2.9)",
+    "librt (==0.8.0)",
+    "pydantic-core (==2.41.5)",
+    "types-pyyaml (==6.0.12.20250915)",
+    "typing-inspection (==0.4.2)",
+    "tzdata (==2025.3)",
+]
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "W", "F", "I", "N", "UP", "B", "A", "C4", "SIM"]
+ignore = ["E501"]
+
+[tool.ruff.lint.isort]
+known-first-party = ["network", "electronics_network"]
+
+[tool.mypy]
+python_version = "3.11"
+plugins = ["mypy_django_plugin.main", "mypy_drf_plugin.main"]
+ignore_missing_imports = true
+warn_return_any = true
+warn_unused_configs = true
+check_untyped_defs = true
+
+[tool.django-stubs]
+django_settings_module = "electronics_network.settings"
+
+[tool.coverage.run]
+source = ["network", "electronics_network"]
+omit = ["*/migrations/*", "*/tests/*", "manage.py"]
+
+[tool.coverage.report]
+show_missing = true
+fail_under = 80
